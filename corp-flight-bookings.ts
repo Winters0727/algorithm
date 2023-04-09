@@ -9,7 +9,6 @@ function corpFlightBookings(bookings: number[][], n: number): number[] {
 
   for (const booking of bookings) {
     const [start, end, value] = booking;
-    console.log(start, end, value);
     startMemo[start - 1] += value;
     endMemo[end] += value;
   }
@@ -23,14 +22,3 @@ function corpFlightBookings(bookings: number[][], n: number): number[] {
 
   return result;
 }
-
-console.log(
-  corpFlightBookings(
-    [
-      [1, 2, 10],
-      [2, 3, 20],
-      [2, 5, 25],
-    ],
-    5
-  )
-);
