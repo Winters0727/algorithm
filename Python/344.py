@@ -8,4 +8,3 @@ class Solution:
         s.reverse()
         s[:] = reversed(s[:])
         s[:] = s[::-1]
-        
