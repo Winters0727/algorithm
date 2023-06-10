@@ -13,11 +13,11 @@ function corpFlightBookings(bookings: number[][], n: number): number[] {
     endMemo[end] += value;
   }
 
-  let currentValue = 0;
+  let currentSeat = 0;
 
   for (const index of range) {
-    currentValue += startMemo[index] - endMemo[index];
-    result[index] = currentValue;
+    currentSeat += startMemo[index] - endMemo[index];
+    result[index] = currentSeat;
   }
 
   return result;
